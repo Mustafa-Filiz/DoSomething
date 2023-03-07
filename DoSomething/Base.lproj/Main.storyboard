@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="50" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0Zm-ci-9K7">
-                                <rect key="frame" x="0.0" y="155" width="393" height="663"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ToDoItemCell" id="j1F-Al-E4L" customClass="DSToDoItemCell" customModule="DoSomething" customModuleProvider="target">
@@ -101,7 +101,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="todoTableView" destination="0Zm-ci-9K7" id="X2v-6F-1q1"/>
-                        <segue destination="vlF-xl-Z8O" kind="presentation" identifier="ShowAddToDo" id="Hu9-AS-Dyz"/>
+                        <segue destination="vlF-xl-Z8O" kind="show" identifier="ShowAddToDo" id="Hu9-AS-Dyz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -131,7 +131,7 @@
             <objects>
                 <viewController id="vlF-xl-Z8O" customClass="DSAddToDoVC" customModule="DoSomething" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tmn-9H-sdZ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your to do here." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xaV-t2-pxb">
@@ -152,7 +152,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWf-P3-hqH">
-                                <rect key="frame" x="50" y="693" width="293" height="40"/>
+                                <rect key="frame" x="50" y="728" width="293" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Hcx-LW-ncN"/>
                                 </constraints>

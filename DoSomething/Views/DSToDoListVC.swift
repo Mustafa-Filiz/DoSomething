@@ -123,22 +123,12 @@ extension DSToDoListVC: UITableViewDelegate, UITableViewDataSource {
 
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        let updateToDoVC = DSAddToDoVC(
-//            todo: todoList[indexPath.row].todo,
-//            date: todoList[indexPath.row].date,
+//            todo: todoList[indexPath.row].todo ?? "",
+//            date: todoList[indexPath.row].date ?? Date(),
 //            note: todoList[indexPath.row].note,
 //            actionText: "Update"
 //        )
 //
 //        navigationController?.pushViewController(updateToDoVC, animated: true)
 //    }
-}
-
-extension DSToDoListVC: UIAdaptivePresentationControllerDelegate {
-    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
-        getAllTodos()
-    }
-    
-    func presentationControllerWillDismiss(_ presentationController: UIPresentationController) {
-        <#code#>
-    }
 }
